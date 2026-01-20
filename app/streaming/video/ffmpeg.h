@@ -8,6 +8,7 @@
 #include "decoder.h"
 #include "ffmpeg-renderers/renderer.h"
 #include "ffmpeg-renderers/pacer/pacer.h"
+#include "videorecorder.h"
 
 extern "C" {
 #include <libavcodec/avcodec.h>
@@ -131,4 +132,6 @@ private:
     static const uint8_t k_AV1High8_444TestFrame[];
     static const uint8_t k_AV1High10_444TestFrame[];
 
+    // Video recording
+    VideoRecorder* m_VideoRecorder;
 };

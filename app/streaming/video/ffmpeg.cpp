@@ -2,6 +2,9 @@
 #include "ffmpeg.h"
 #include "streaming/session.h"
 
+#include <QDir>
+#include <QDateTime>
+
 #include <h264_stream.h>
 
 extern "C" {
@@ -235,7 +238,8 @@ FFmpegVideoDecoder::FFmpegVideoDecoder(bool testOnly)
       m_VideoFormat(0),
       m_NeedsSpsFixup(false),
       m_TestOnly(testOnly),
-      m_DecoderThread(nullptr)
+      m_DecoderThread(nullptr),
+      m_VideoRecorder(nullptr)
 {
     SDL_zero(m_ActiveWndVideoStats);
     SDL_zero(m_LastWndVideoStats);
@@ -245,10 +249,20 @@ FFmpegVideoDecoder::FFmpegVideoDecoder(bool testOnly)
 
     // Use linear filtering when renderer scaling is required
     SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
+
+    // Initialize video recorder
+    m_VideoRecorder = new VideoRecorder();
 }
 
 FFmpegVideoDecoder::~FFmpegVideoDecoder()
 {
+    // Stop video recording
+    if (m_VideoRecorder) {
+        m_VideoRecorder->finalize();
+        delete m_VideoRecorder;
+        m_VideoRecorder = nullptr;
+    }
+
     reset();
 
     // Set log level back to default.
@@ -1773,6 +1787,24 @@ void FFmpegVideoDecoder::decoderThreadProc()
                     }
 
                     m_ActiveWndVideoStats.decodedFrames++;
+
+                    // Record frame to file if recording is enabled
+                    if (m_VideoRecorder) {
+                        // Start recording on first frame if not already started
+                        if (!m_VideoRecorder->isRecording() && m_VideoDecoderCtx) {
+                            // Save to recorded_session directory in the moonlight-qt folder
+                            QString recordDir = "/Users/ushasighosh/Desktop/moonlight-qt/recorded_session";
+                            QDir().mkpath(recordDir);
+                            QString outputPath = QString("%1/moonlight_recording_%2.yuv")
+                                .arg(recordDir)
+                                .arg(QDateTime::currentDateTime().toString("yyyyMMdd_hhmmss"));
+                            m_VideoRecorder->initialize(outputPath,
+                                                       m_VideoDecoderCtx->width,
+                                                       m_VideoDecoderCtx->height,
+                                                       m_StreamFps > 0 ? m_StreamFps : 60);
+                        }
+                        m_VideoRecorder->writeFrame(frame);
+                    }
 
                     // Queue the frame for rendering (or render now if pacer is disabled)
                     m_Pacer->submitFrame(frame);

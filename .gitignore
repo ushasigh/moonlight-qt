@@ -6,3 +6,6 @@
 build/
 config.tests/*/.qmake.stash
 config.tests/*/Makefile
+
+# Video recordings (large YUV files)
+recorded_session/
