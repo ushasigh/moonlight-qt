@@ -7,6 +7,10 @@ export PATH="/opt/homebrew/opt/qt@5/bin:$PATH" && cd /Users/ushasighosh/Desktop/
 cd /Users/ushasighosh/Desktop/moonlight-qt/build && find . -name "*.app" -type d
 open /Users/ushasighosh/Desktop/moonlight-qt/build/app/Moonlight.app
 
+## Build
+cd build
+make -j$(sysctl -n hw.ncpu)
+
 ## Running moonlight with logging enabled
 ./build/app/Moonlight.app/Contents/MacOS/Moonlight 2>&1 | tee logs/overlay_log_run1.txt
 
