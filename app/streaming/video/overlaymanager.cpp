@@ -45,7 +45,7 @@ OverlayManager::~OverlayManager()
     // but not always, deinitialize TTF. In the cases where Session objects overlap
     // in lifetime, there may be an additional reference on TTF for the new Session
     // that means it will not be cleaned up here.
-    //SDL_assert(TTF_WasInit() == 0);
+    // SDL_assert(TTF_WasInit() == 0);
 }
 
 bool OverlayManager::isOverlayEnabled(OverlayType type)

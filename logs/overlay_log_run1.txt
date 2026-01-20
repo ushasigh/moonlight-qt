@@ -1,0 +1,838 @@
+00:00:00 - SDL Info (0): Compiled with SDL 2.33.0
+00:00:00 - SDL Info (0): Running with SDL 2.33.0
+00:00:00 - Qt Info: No translation available for "en_US"
+00:00:00 - Qt Warning: Populating font family aliases took 116 ms. Replace uses of missing font family "Roboto" with one that exists to avoid this cost. 
+00:00:00 - Qt Warning: qrc:/gui/main.qml:13:1: QML ApplicationWindow: ToolTip must be attached to an Item
+00:00:00 - Qt Info: Found "gamecontrollerdb.txt" at "/Users/ushasighosh/Library/Caches/Moonlight Game Streaming Project/Moonlight/gamecontrollerdb.txt"
+00:00:00 - SDL Info (0): Loaded 176 new gamepad mappings
+00:00:00 - SDL Info (0): V-sync disabled
+00:00:00 - SDL Info (0): Selected Metal device: Apple M3
+00:00:00 - Qt Info: Found "vt_renderer.metal" at ":/data/vt_renderer.metal"
+00:00:00 - SDL Info (0): Using Metal renderer with hardware decoding
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Decoding VPS
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Main 10 profile bitstream
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Decoding SPS
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Main 10 profile bitstream
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Decoding VUI
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Decoding PPS
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Format videotoolbox_vld chosen by get_format().
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Format videotoolbox_vld requires hwaccel hevc_videotoolbox initialisation.
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Output frame with POC 0/3.
+00:00:00 - FFmpeg: [hevc @ 0x1210c5880] Decoded frame with POC 0/3.
+00:00:00 - SDL Info (0): FFmpeg-based video decoder chosen
+00:00:00 - Qt Info: Found "gamecontrollerdb.txt" at "/Users/ushasighosh/Library/Caches/Moonlight Game Streaming Project/Moonlight/gamecontrollerdb.txt"
+00:00:00 - SDL Info (0): Loaded 176 new gamepad mappings
+00:00:00 - Qt Debug: Current Moonlight version: "6.1.0"
+2026-01-19 17:20:24.559 Moonlight[1478:5306971] WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.
+00:00:00 - Qt Info: Gamepad mappings are up to date
+00:00:00 - Qt Debug: Found update manifest match for current platform
+00:00:00 - Qt Debug: Latest version of Moonlight for this platform is: "6.1.0"
+00:00:00 - Qt Debug: Update manifest version equal to current version
+00:00:00 - Qt Info: Latest supported GFE server: "99.99.99.99"
+00:00:00 - Qt Info: "wcsng-32" is now online at "137.110.115.64:47989"
+00:00:02 - Qt Info: Found "ModeSeven.ttf" at ":/data/ModeSeven.ttf"
+00:00:03 - SDL Info (0): Qt UI screen is at (-79,-1080)
+00:00:03 - SDL Info (0): SDL found matching display 1
+00:00:03 - Qt Info: Server GPU: ""
+00:00:03 - Qt Info: Server GFE version: "3.23.0.74"
+00:00:03 - SDL Info (0): Video bitrate: 20000 kbps
+00:00:03 - SDL Info (0): Audio channel count: 2
+00:00:03 - SDL Info (0): Audio channel mask: 3
+00:00:03 - SDL Info (0): V-sync disabled
+00:00:03 - SDL Info (0): Selected Metal device: Apple M3
+00:00:03 - Qt Info: Found "vt_renderer.metal" at ":/data/vt_renderer.metal"
+00:00:03 - SDL Info (0): Using Metal renderer with hardware decoding
+00:00:03 - FFmpeg: [hevc @ 0x121706750] nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+00:00:03 - FFmpeg: [hevc @ 0x121706750] nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+00:00:03 - FFmpeg: [hevc @ 0x121706750] nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+00:00:03 - FFmpeg: [hevc @ 0x121706750] nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Decoding VPS
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Main profile bitstream
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Decoding SPS
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Main profile bitstream
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Decoding VUI
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Decoding PPS
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Format videotoolbox_vld chosen by get_format().
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Format videotoolbox_vld requires hwaccel hevc_videotoolbox initialisation.
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Output frame with POC 0/3.
+00:00:03 - FFmpeg: [hevc @ 0x121706750] Decoded frame with POC 0/3.
+00:00:03 - SDL Info (0): FFmpeg-based video decoder chosen
+00:00:03 - SDL Info (0): V-sync disabled
+00:00:03 - SDL Info (0): Selected Metal device: Apple M3
+00:00:03 - Qt Info: Found "vt_renderer.metal" at ":/data/vt_renderer.metal"
+00:00:03 - SDL Info (0): Using Metal renderer with hardware decoding
+00:00:03 - FFmpeg: [h264 @ 0x137815070] nal_unit_type: 7(SPS), nal_ref_idc: 3
+00:00:03 - FFmpeg: [h264 @ 0x137815070] nal_unit_type: 8(PPS), nal_ref_idc: 3
+00:00:03 - FFmpeg: [h264 @ 0x137815070] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:03 - FFmpeg: [h264 @ 0x137815070] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:03 - FFmpeg: [h264 @ 0x137815070] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:03 - FFmpeg: [h264 @ 0x137815070] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:03 - FFmpeg: [h264 @ 0x137815070] Decoding VUI
+00:00:03 - FFmpeg: [h264 @ 0x137815070] Format videotoolbox_vld chosen by get_format().
+00:00:03 - FFmpeg: [h264 @ 0x137815070] Format videotoolbox_vld requires hwaccel h264_videotoolbox initialisation.
+00:00:03 - FFmpeg: [h264 @ 0x137815070] Reinit context to 1280x720, pix_fmt: videotoolbox_vld
+00:00:03 - SDL Info (0): FFmpeg-based video decoder chosen
+00:00:04 - SDL Info (0): Desired audio buffer: 720 samples (5760 bytes)
+00:00:04 - SDL Info (0): Obtained audio buffer: 720 samples (5760 bytes)
+00:00:04 - SDL Info (0): SDL audio driver: coreaudio
+00:00:04 - Qt Info: Found "gamecontrollerdb.txt" at "/Users/ushasighosh/Library/Caches/Moonlight Game Streaming Project/Moonlight/gamecontrollerdb.txt"
+00:00:04 - SDL Info (0): Loaded 176 new gamepad mappings
+00:00:04 - SDL Info (0): V-sync disabled
+00:00:04 - SDL Info (0): Selected Metal device: Apple M3
+00:00:04 - Qt Info: Found "vt_renderer.metal" at ":/data/vt_renderer.metal"
+00:00:04 - SDL Info (0): Using Metal renderer with hardware decoding
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] nal_unit_type: 7(SPS), nal_ref_idc: 3
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] nal_unit_type: 8(PPS), nal_ref_idc: 3
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] Decoding VUI
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] Format videotoolbox_vld chosen by get_format().
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] Format videotoolbox_vld requires hwaccel h264_videotoolbox initialisation.
+00:00:04 - FFmpeg: [h264 @ 0x1211935f0] Reinit context to 1280x720, pix_fmt: videotoolbox_vld
+00:00:04 - SDL Info (0): FFmpeg-based video decoder chosen
+00:00:04 - Qt Warning: Your selection to enable remote desktop mouse mode may cause problems in games.
+00:00:04 - Qt Info: "Ushasis-Laptop.local" is now offline
+00:00:08 - Qt Info: Found "gamecontrollerdb.txt" at "/Users/ushasighosh/Library/Caches/Moonlight Game Streaming Project/Moonlight/gamecontrollerdb.txt"
+00:00:08 - SDL Info (0): Loaded 176 new gamepad mappings
+00:00:09 - Qt Info: Executing request: "https://137.110.115.64:47984/resume?uniqueid=0123456789ABCDEF&uuid=abc3863a93594eca9167e512625111d7&appid=881448767&mode=1920x1080x60&additionalStates=1&sops=1&rikey=REDACTED&rikeyid=REDACTED&localAudioPlayMode=0&surroundAudioInfo=196610&remoteControllersBitmap=0&gcmap=0&gcpersist=0&corever=1"
+00:00:10 - Qt Info: Launch response: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<root status_code=\"200\"><sessionUrl0>rtspenc://137.110.115.64:48010</sessionUrl0><resume>1</resume></root>"
+00:00:10 - Qt Info: Found matching interface: "en0" "50:A6:D8:9D:EF:F3" QFlags<QNetworkInterface::InterfaceFlag>(IsUp|IsRunning|CanBroadcast|CanMulticast)
+00:00:10 - Qt Info: Interface Type: QNetworkInterface::Wifi
+00:00:10 - Qt Info: Interface MTU: 1500
+00:00:10 - SDL Info (0): RTSP port: 48010
+00:00:10 - SDL Info (0): Initializing platform...
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Resolving host name...
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Packet size capped at 1024 bytes for remote IPv4 streaming
+00:00:10 - SDL Info (0): Initializing audio stream...
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Starting RTSP handshake...
+00:00:10 - SDL Info (0): Reference frame invalidation is not supported by this host
+00:00:10 - SDL Info (0): Audio port: 48000
+00:00:10 - SDL Info (0): Video port: 47998
+00:00:10 - SDL Info (0): Control port: 47999
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Initializing control stream...
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Initializing video stream...
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Initializing input stream...
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Starting control stream...
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Starting video stream...
+00:00:10 - SDL Info (0): Video stream is 1920x1080x60 (format 0x1)
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Starting audio stream...
+00:00:10 - SDL Info (0): Desired audio buffer: 720 samples (5760 bytes)
+00:00:10 - SDL Info (0): Obtained audio buffer: 720 samples (5760 bytes)
+00:00:10 - SDL Info (0): SDL audio driver: coreaudio
+00:00:10 - SDL Info (0): Audio stream has 2 channels
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Starting input stream...
+00:00:10 - SDL Info (0): done
+00:00:10 - SDL Info (0): Received first video packet after 0 ms
+00:00:10 - SDL Info (0): Leaving speculative RFI mode after OOS video data at frame 1
+00:00:10 - SDL Info (0): Qt UI screen is at (-79,-1080)
+00:00:10 - SDL Info (0): SDL found matching display 1
+00:00:10 - SDL Info (0): Found display mode with desktop resolution: 1920x1080x60
+00:00:10 - SDL Info (0): Video decode unit queue overflow
+00:00:10 - SDL Info (0): IDR frame request sent
+00:00:10 - SDL Info (0): Waiting for IDR frame
+00:00:10 - SDL Info (0): Received first audio packet after 400 ms
+00:00:10 - SDL Info (0): Initial audio resync period: 500 milliseconds
+00:00:11 - SDL Info (0): Video decode unit queue overflow
+00:00:11 - SDL Info (0): IDR frame request sent
+00:00:11 - SDL Info (0): Waiting for IDR frame
+00:00:11 - SDL Info (0): Waiting for IDR frame
+00:00:11 - SDL Info (0): Recreating renderer for window event: 1 (0 0)
+00:00:11 - SDL Info (0): V-sync enabled
+00:00:11 - SDL Info (0): Selected Metal device: Apple M3
+00:00:11 - Qt Info: Found "vt_renderer.metal" at ":/data/vt_renderer.metal"
+00:00:11 - SDL Info (0): Using Metal renderer with hardware decoding
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] nal_unit_type: 7(SPS), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] nal_unit_type: 8(PPS), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] Decoding VUI
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] Format videotoolbox_vld chosen by get_format().
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] Format videotoolbox_vld requires hwaccel h264_videotoolbox initialisation.
+00:00:11 - FFmpeg: [h264 @ 0x135da3700] Reinit context to 1280x720, pix_fmt: videotoolbox_vld
+00:00:11 - SDL Info (0): Selected Metal device: Apple M3
+00:00:11 - Qt Info: Found "vt_renderer.metal" at ":/data/vt_renderer.metal"
+00:00:11 - SDL Info (0): Frame pacing disabled: target 60 Hz with 60 FPS stream
+00:00:11 - SDL Info (0): Using Metal renderer with hardware decoding
+00:00:11 - SDL Info (0): Using H.264 SPS fixup
+00:00:11 - SDL Info (0): Renderer 'VideoToolbox (Metal)' chosen
+00:00:11 - SDL Info (0): FFmpeg-based video decoder chosen
+00:00:11 - SDL Info (0): Dropping window event during flush: 6 (1920 1080)
+00:00:11 - SDL Info (0): IDR frame request sent
+00:00:11 - FFmpeg: [h264 @ 0x135da5050] nal_unit_type: 7(SPS), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da5050] nal_unit_type: 8(PPS), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da5050] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da5050] nal_unit_type: 5(IDR), nal_ref_idc: 3
+00:00:11 - FFmpeg: [h264 @ 0x135da5050] Decoding VUI
+00:00:11 - FFmpeg: [h264 @ 0x135da5050] Format videotoolbox_vld chosen by get_format().
+00:00:11 - FFmpeg: [h264 @ 0x135da5050] Format videotoolbox_vld requires hwaccel h264_videotoolbox initialisation.
+00:00:11 - FFmpeg: [h264 @ 0x135da5050] Reinit context to 1920x1088, pix_fmt: videotoolbox_vld
+00:00:11 - SDL Info (0): [METRICS] Video stream: 1920x1080 73.22 FPS (Codec: H.264)
+Incoming frame rate from network: 73.22 FPS
+Decoding frame rate: 73.22 FPS
+Rendering frame rate: 65.90 FPS
+Host processing latency min/max/average: 12.8/27.2/15.3 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 10.00%
+Average network latency: 8 ms (variance: 8 ms)
+Average decoding time: 39.19 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.22 ms
+00:00:12 - SDL Info (0): [METRICS] Video stream: 1920x1080 66.32 FPS (Codec: H.264)
+Incoming frame rate from network: 66.32 FPS
+Decoding frame rate: 66.32 FPS
+Rendering frame rate: 62.58 FPS
+Host processing latency min/max/average: 12.8/27.2/15.4 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 5.63%
+Average network latency: 3 ms (variance: 0 ms)
+Average decoding time: 24.09 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.13 ms
+00:00:12 - SDL Info (0): [METRICS] Video stream: 1920x1080 59.48 FPS (Codec: H.264)
+Incoming frame rate from network: 59.48 FPS
+Decoding frame rate: 59.48 FPS
+Rendering frame rate: 59.48 FPS
+Host processing latency min/max/average: 13.1/18.8/15.1 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 4 ms (variance: 0 ms)
+Average decoding time: 3.63 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:13 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.15 FPS (Codec: H.264)
+Incoming frame rate from network: 60.15 FPS
+Decoding frame rate: 60.15 FPS
+Rendering frame rate: 60.15 FPS
+Host processing latency min/max/average: 13.1/17.9/14.8 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 5 ms (variance: 4 ms)
+Average decoding time: 4.43 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:13 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.10 FPS (Codec: H.264)
+Incoming frame rate from network: 60.10 FPS
+Decoding frame rate: 60.10 FPS
+Rendering frame rate: 60.10 FPS
+Host processing latency min/max/average: 14.4/17.0/14.9 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 17 ms (variance: 22 ms)
+Average decoding time: 4.28 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:14 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.15 FPS (Codec: H.264)
+Incoming frame rate from network: 60.15 FPS
+Decoding frame rate: 60.15 FPS
+Rendering frame rate: 60.15 FPS
+Host processing latency min/max/average: 14.5/17.0/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 17 ms (variance: 23 ms)
+Average decoding time: 2.99 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:14 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.21 FPS (Codec: H.264)
+Incoming frame rate from network: 60.21 FPS
+Decoding frame rate: 60.21 FPS
+Rendering frame rate: 60.21 FPS
+Host processing latency min/max/average: 14.5/16.2/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 17 ms (variance: 22 ms)
+Average decoding time: 3.56 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:15 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.07 FPS (Codec: H.264)
+Incoming frame rate from network: 60.07 FPS
+Decoding frame rate: 60.07 FPS
+Rendering frame rate: 60.07 FPS
+Host processing latency min/max/average: 14.5/15.6/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 17 ms (variance: 22 ms)
+Average decoding time: 3.45 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:15 - SDL Info (0): [METRICS] Video stream: 1920x1080 59.94 FPS (Codec: H.264)
+Incoming frame rate from network: 59.94 FPS
+Decoding frame rate: 59.94 FPS
+Rendering frame rate: 59.94 FPS
+Host processing latency min/max/average: 14.5/15.1/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 19 ms (variance: 20 ms)
+Average decoding time: 3.46 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:16 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.24 FPS (Codec: H.264)
+Incoming frame rate from network: 60.24 FPS
+Decoding frame rate: 60.24 FPS
+Rendering frame rate: 60.24 FPS
+Host processing latency min/max/average: 14.5/15.0/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 11 ms (variance: 15 ms)
+Average decoding time: 3.42 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:17 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.36 FPS (Codec: H.264)
+Incoming frame rate from network: 60.36 FPS
+Decoding frame rate: 60.36 FPS
+Rendering frame rate: 60.36 FPS
+Host processing latency min/max/average: 14.4/15.6/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 10 ms (variance: 12 ms)
+Average decoding time: 2.90 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:17 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.09 FPS (Codec: H.264)
+Incoming frame rate from network: 60.09 FPS
+Decoding frame rate: 60.09 FPS
+Rendering frame rate: 60.09 FPS
+Host processing latency min/max/average: 14.4/16.0/15.1 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 10 ms (variance: 12 ms)
+Average decoding time: 3.39 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:18 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.05 FPS (Codec: H.264)
+Incoming frame rate from network: 60.05 FPS
+Decoding frame rate: 60.05 FPS
+Rendering frame rate: 60.05 FPS
+Host processing latency min/max/average: 14.5/16.0/15.0 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 12 ms (variance: 10 ms)
+Average decoding time: 3.26 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:18 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.23 FPS (Codec: H.264)
+Incoming frame rate from network: 60.23 FPS
+Decoding frame rate: 60.23 FPS
+Rendering frame rate: 60.23 FPS
+Host processing latency min/max/average: 14.5/14.8/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 8 ms (variance: 7 ms)
+Average decoding time: 3.46 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:19 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.38 FPS (Codec: H.264)
+Incoming frame rate from network: 60.38 FPS
+Decoding frame rate: 60.38 FPS
+Rendering frame rate: 60.38 FPS
+Host processing latency min/max/average: 14.5/16.3/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 7 ms (variance: 7 ms)
+Average decoding time: 3.77 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:19 - SDL Info (0): [METRICS] Video stream: 1920x1080 58.99 FPS (Codec: H.264)
+Incoming frame rate from network: 58.99 FPS
+Decoding frame rate: 58.99 FPS
+Rendering frame rate: 58.99 FPS
+Host processing latency min/max/average: 14.5/16.4/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 10 ms (variance: 10 ms)
+Average decoding time: 3.57 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:20 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.20 FPS (Codec: H.264)
+Incoming frame rate from network: 60.20 FPS
+Decoding frame rate: 60.20 FPS
+Rendering frame rate: 60.20 FPS
+Host processing latency min/max/average: 14.5/16.5/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 6 ms (variance: 7 ms)
+Average decoding time: 4.42 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:20 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.29 FPS (Codec: H.264)
+Incoming frame rate from network: 60.29 FPS
+Decoding frame rate: 60.29 FPS
+Rendering frame rate: 60.29 FPS
+Host processing latency min/max/average: 14.5/16.5/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 5 ms (variance: 6 ms)
+Average decoding time: 4.73 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:21 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.24 FPS (Codec: H.264)
+Incoming frame rate from network: 60.24 FPS
+Decoding frame rate: 60.24 FPS
+Rendering frame rate: 60.24 FPS
+Host processing latency min/max/average: 14.5/16.4/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 5 ms (variance: 3 ms)
+Average decoding time: 5.15 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:21 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.16 FPS (Codec: H.264)
+Incoming frame rate from network: 60.16 FPS
+Decoding frame rate: 60.16 FPS
+Rendering frame rate: 60.16 FPS
+Host processing latency min/max/average: 14.5/16.4/14.8 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 4 ms (variance: 2 ms)
+Average decoding time: 4.32 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:22 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.04 FPS (Codec: H.264)
+Incoming frame rate from network: 60.04 FPS
+Decoding frame rate: 60.04 FPS
+Rendering frame rate: 60.04 FPS
+Host processing latency min/max/average: 14.5/15.7/15.2 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 30 ms (variance: 24 ms)
+Average decoding time: 4.91 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:22 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.32 FPS (Codec: H.264)
+Incoming frame rate from network: 60.32 FPS
+Decoding frame rate: 60.32 FPS
+Rendering frame rate: 60.32 FPS
+Host processing latency min/max/average: 14.5/15.7/15.2 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 17 ms (variance: 22 ms)
+Average decoding time: 6.17 ms
+Average frame queue delay: 0.03 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:23 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.34 FPS (Codec: H.264)
+Incoming frame rate from network: 60.34 FPS
+Decoding frame rate: 60.34 FPS
+Rendering frame rate: 60.34 FPS
+Host processing latency min/max/average: 14.5/15.7/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 16 ms (variance: 21 ms)
+Average decoding time: 4.24 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:23 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.07 FPS (Codec: H.264)
+Incoming frame rate from network: 60.07 FPS
+Decoding frame rate: 60.07 FPS
+Rendering frame rate: 60.07 FPS
+Host processing latency min/max/average: 14.5/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 15 ms (variance: 19 ms)
+Average decoding time: 2.72 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:24 - SDL Info (0): [METRICS] Video stream: 1920x1080 59.19 FPS (Codec: H.264)
+Incoming frame rate from network: 59.19 FPS
+Decoding frame rate: 59.19 FPS
+Rendering frame rate: 59.19 FPS
+Host processing latency min/max/average: 14.5/15.6/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 12 ms (variance: 15 ms)
+Average decoding time: 4.26 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:24 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.27 FPS (Codec: H.264)
+Incoming frame rate from network: 60.27 FPS
+Decoding frame rate: 60.27 FPS
+Rendering frame rate: 60.27 FPS
+Host processing latency min/max/average: 14.5/15.6/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 11 ms (variance: 15 ms)
+Average decoding time: 4.45 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:25 - SDL Info (0): [METRICS] Video stream: 1920x1080 59.66 FPS (Codec: H.264)
+Incoming frame rate from network: 59.66 FPS
+Decoding frame rate: 59.66 FPS
+Rendering frame rate: 59.66 FPS
+Host processing latency min/max/average: 14.5/16.7/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 19 ms (variance: 18 ms)
+Average decoding time: 3.07 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:25 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.18 FPS (Codec: H.264)
+Incoming frame rate from network: 60.18 FPS
+Decoding frame rate: 60.18 FPS
+Rendering frame rate: 60.18 FPS
+Host processing latency min/max/average: 14.5/16.7/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 11 ms (variance: 14 ms)
+Average decoding time: 3.79 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:26 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.70 FPS (Codec: H.264)
+Incoming frame rate from network: 60.70 FPS
+Decoding frame rate: 60.70 FPS
+Rendering frame rate: 60.70 FPS
+Host processing latency min/max/average: 14.5/15.6/15.0 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 9 ms (variance: 11 ms)
+Average decoding time: 3.78 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:26 - SDL Info (0): [METRICS] Video stream: 1920x1080 59.75 FPS (Codec: H.264)
+Incoming frame rate from network: 59.75 FPS
+Decoding frame rate: 59.75 FPS
+Rendering frame rate: 59.75 FPS
+Host processing latency min/max/average: 14.5/15.6/15.0 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 10 ms (variance: 7 ms)
+Average decoding time: 4.06 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:27 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.30 FPS (Codec: H.264)
+Incoming frame rate from network: 60.30 FPS
+Decoding frame rate: 60.30 FPS
+Rendering frame rate: 60.30 FPS
+Host processing latency min/max/average: 14.5/15.6/14.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 6 ms (variance: 5 ms)
+Average decoding time: 4.02 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:28 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.43 FPS (Codec: H.264)
+Incoming frame rate from network: 60.43 FPS
+Decoding frame rate: 60.43 FPS
+Rendering frame rate: 60.43 FPS
+Host processing latency min/max/average: 14.5/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 3 ms (variance: 4 ms)
+Average decoding time: 3.99 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:28 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.13 FPS (Codec: H.264)
+Incoming frame rate from network: 60.13 FPS
+Decoding frame rate: 60.13 FPS
+Rendering frame rate: 60.13 FPS
+Host processing latency min/max/average: 14.5/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 4 ms (variance: 3 ms)
+Average decoding time: 5.75 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:29 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.50 FPS (Codec: H.264)
+Incoming frame rate from network: 60.50 FPS
+Decoding frame rate: 60.50 FPS
+Rendering frame rate: 60.50 FPS
+Host processing latency min/max/average: 14.5/14.8/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 3 ms (variance: 3 ms)
+Average decoding time: 4.38 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:29 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.12 FPS (Codec: H.264)
+Incoming frame rate from network: 60.12 FPS
+Decoding frame rate: 60.12 FPS
+Rendering frame rate: 60.12 FPS
+Host processing latency min/max/average: 14.5/14.8/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 3 ms (variance: 1 ms)
+Average decoding time: 2.48 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:30 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.08 FPS (Codec: H.264)
+Incoming frame rate from network: 60.08 FPS
+Decoding frame rate: 60.08 FPS
+Rendering frame rate: 60.08 FPS
+Host processing latency min/max/average: 14.5/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 30 ms (variance: 23 ms)
+Average decoding time: 3.08 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:30 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.23 FPS (Codec: H.264)
+Incoming frame rate from network: 60.23 FPS
+Decoding frame rate: 60.23 FPS
+Rendering frame rate: 60.23 FPS
+Host processing latency min/max/average: 14.5/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 17 ms (variance: 22 ms)
+Average decoding time: 4.36 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:31 - SDL Info (0): [METRICS] Video stream: 1920x1080 59.38 FPS (Codec: H.264)
+Incoming frame rate from network: 59.38 FPS
+Decoding frame rate: 59.38 FPS
+Rendering frame rate: 59.38 FPS
+Host processing latency min/max/average: 14.5/14.8/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 18 ms (variance: 22 ms)
+Average decoding time: 4.06 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:31 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.14 FPS (Codec: H.264)
+Incoming frame rate from network: 60.14 FPS
+Decoding frame rate: 60.14 FPS
+Rendering frame rate: 60.14 FPS
+Host processing latency min/max/average: 14.5/14.8/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 18 ms (variance: 23 ms)
+Average decoding time: 3.13 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:32 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.10 FPS (Codec: H.264)
+Incoming frame rate from network: 60.10 FPS
+Decoding frame rate: 60.10 FPS
+Rendering frame rate: 60.10 FPS
+Host processing latency min/max/average: 14.5/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 16 ms (variance: 21 ms)
+Average decoding time: 4.39 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:32 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.05 FPS (Codec: H.264)
+Incoming frame rate from network: 60.05 FPS
+Decoding frame rate: 60.05 FPS
+Rendering frame rate: 60.05 FPS
+Host processing latency min/max/average: 14.4/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 20 ms (variance: 22 ms)
+Average decoding time: 5.99 ms
+Average frame queue delay: 0.03 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:33 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.21 FPS (Codec: H.264)
+Incoming frame rate from network: 60.21 FPS
+Decoding frame rate: 60.21 FPS
+Rendering frame rate: 60.21 FPS
+Host processing latency min/max/average: 14.4/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 17 ms (variance: 19 ms)
+Average decoding time: 6.02 ms
+Average frame queue delay: 0.03 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:33 - SDL Info (0): [METRICS] Video stream: 1920x1080 59.34 FPS (Codec: H.264)
+Incoming frame rate from network: 59.34 FPS
+Decoding frame rate: 59.34 FPS
+Rendering frame rate: 59.34 FPS
+Host processing latency min/max/average: 14.5/27.0/15.0 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 10 ms (variance: 13 ms)
+Average decoding time: 4.26 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:34 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.21 FPS (Codec: H.264)
+Incoming frame rate from network: 60.21 FPS
+Decoding frame rate: 60.21 FPS
+Rendering frame rate: 60.21 FPS
+Host processing latency min/max/average: 14.5/47.7/15.9 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 9 ms (variance: 10 ms)
+Average decoding time: 4.56 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:34 - SDL Info (0): [METRICS] Video stream: 1920x1080 61.26 FPS (Codec: H.264)
+Incoming frame rate from network: 61.26 FPS
+Decoding frame rate: 61.26 FPS
+Rendering frame rate: 61.26 FPS
+Host processing latency min/max/average: 14.5/47.7/15.4 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 9 ms (variance: 8 ms)
+Average decoding time: 5.58 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:35 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.14 FPS (Codec: H.264)
+Incoming frame rate from network: 60.14 FPS
+Decoding frame rate: 60.14 FPS
+Rendering frame rate: 60.14 FPS
+Host processing latency min/max/average: 14.5/14.7/14.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 7 ms (variance: 8 ms)
+Average decoding time: 4.57 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:35 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.10 FPS (Codec: H.264)
+Incoming frame rate from network: 60.10 FPS
+Decoding frame rate: 60.10 FPS
+Rendering frame rate: 60.10 FPS
+Host processing latency min/max/average: 14.5/27.1/15.2 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 7 ms (variance: 7 ms)
+Average decoding time: 4.88 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:36 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.23 FPS (Codec: H.264)
+Incoming frame rate from network: 60.23 FPS
+Decoding frame rate: 60.23 FPS
+Rendering frame rate: 60.23 FPS
+Host processing latency min/max/average: 14.5/47.8/17.3 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 6 ms (variance: 4 ms)
+Average decoding time: 7.34 ms
+Average frame queue delay: 0.03 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:36 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.18 FPS (Codec: H.264)
+Incoming frame rate from network: 60.18 FPS
+Decoding frame rate: 60.18 FPS
+Rendering frame rate: 60.18 FPS
+Host processing latency min/max/average: 14.5/47.8/16.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 5 ms (variance: 2 ms)
+Average decoding time: 7.57 ms
+Average frame queue delay: 0.03 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:37 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.24 FPS (Codec: H.264)
+Incoming frame rate from network: 60.24 FPS
+Decoding frame rate: 60.24 FPS
+Rendering frame rate: 60.24 FPS
+Host processing latency min/max/average: 14.5/27.1/15.2 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 4 ms (variance: 4 ms)
+Average decoding time: 5.59 ms
+Average frame queue delay: 0.03 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:37 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.23 FPS (Codec: H.264)
+Incoming frame rate from network: 60.23 FPS
+Decoding frame rate: 60.23 FPS
+Rendering frame rate: 60.23 FPS
+Host processing latency min/max/average: 14.5/35.7/16.0 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 4 ms (variance: 0 ms)
+Average decoding time: 5.47 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:38 - SDL Info (0): [METRICS] Video stream: 1920x1080 61.21 FPS (Codec: H.264)
+Incoming frame rate from network: 61.21 FPS
+Decoding frame rate: 61.21 FPS
+Rendering frame rate: 61.21 FPS
+Host processing latency min/max/average: 14.5/35.7/15.6 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 4 ms (variance: 0 ms)
+Average decoding time: 5.93 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:39 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.26 FPS (Codec: H.264)
+Incoming frame rate from network: 60.26 FPS
+Decoding frame rate: 60.26 FPS
+Rendering frame rate: 60.26 FPS
+Host processing latency min/max/average: 14.5/25.7/14.9 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 4 ms (variance: 0 ms)
+Average decoding time: 5.91 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:39 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.27 FPS (Codec: H.264)
+Incoming frame rate from network: 60.27 FPS
+Decoding frame rate: 60.27 FPS
+Rendering frame rate: 60.27 FPS
+Host processing latency min/max/average: 14.5/16.9/15.3 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 4 ms (variance: 0 ms)
+Average decoding time: 5.17 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:40 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.15 FPS (Codec: H.264)
+Incoming frame rate from network: 60.15 FPS
+Decoding frame rate: 60.15 FPS
+Rendering frame rate: 60.15 FPS
+Host processing latency min/max/average: 14.5/17.0/15.7 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 18 ms (variance: 21 ms)
+Average decoding time: 4.30 ms
+Average frame queue delay: 0.01 ms
+Average rendering time (including monitor V-sync latency): 0.01 ms
+00:00:40 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.13 FPS (Codec: H.264)
+Incoming frame rate from network: 60.13 FPS
+Decoding frame rate: 60.13 FPS
+Rendering frame rate: 60.13 FPS
+Host processing latency min/max/average: 14.4/47.8/16.3 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 16 ms (variance: 19 ms)
+Average decoding time: 5.68 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:41 - SDL Info (0): [METRICS] Video stream: 1920x1080 61.21 FPS (Codec: H.264)
+Incoming frame rate from network: 61.21 FPS
+Decoding frame rate: 61.21 FPS
+Rendering frame rate: 61.21 FPS
+Host processing latency min/max/average: 14.4/47.8/16.4 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 14 ms (variance: 18 ms)
+Average decoding time: 6.49 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:41 - SDL Info (0): [METRICS] Video stream: 1920x1080 61.11 FPS (Codec: H.264)
+Incoming frame rate from network: 61.11 FPS
+Decoding frame rate: 61.11 FPS
+Rendering frame rate: 61.11 FPS
+Host processing latency min/max/average: 14.5/47.8/17.4 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 18 ms (variance: 18 ms)
+Average decoding time: 5.61 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms
+00:00:42 - SDL Info (0): [METRICS] Video stream: 1920x1080 60.25 FPS (Codec: H.264)
+Incoming frame rate from network: 60.25 FPS
+Decoding frame rate: 60.25 FPS
+Rendering frame rate: 60.25 FPS
+Host processing latency min/max/average: 14.5/47.8/18.3 ms
+Frames dropped by your network connection: 0.00%
+Frames dropped due to network jitter: 0.00%
+Average network latency: 10 ms (variance: 12 ms)
+Average decoding time: 5.35 ms
+Average frame queue delay: 0.02 ms
+Average rendering time (including monitor V-sync latency): 0.02 ms

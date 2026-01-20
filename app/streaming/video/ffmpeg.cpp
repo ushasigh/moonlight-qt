@@ -1854,8 +1854,8 @@ int FFmpegVideoDecoder::submitDecodeUnit(PDECODE_UNIT du)
 
     m_BwTracker.AddBytes(du->fullLength);
 
-    // Flip stats windows roughly every second
-    if (LiGetMicroseconds() > m_ActiveWndVideoStats.measurementStartUs + 1000000) {
+    // Flip stats windows roughly every 500ms
+    if (LiGetMicroseconds() > m_ActiveWndVideoStats.measurementStartUs + 500000) {
         // Update overlay stats if it's enabled
         if (Session::get()->getOverlayManager().isOverlayEnabled(Overlay::OverlayDebug)) {
             VIDEO_STATS lastTwoWndStats = {};
@@ -1866,6 +1866,11 @@ int FFmpegVideoDecoder::submitDecodeUnit(PDECODE_UNIT du)
                                 Session::get()->getOverlayManager().getOverlayText(Overlay::OverlayDebug),
                                 Session::get()->getOverlayManager().getOverlayMaxTextLength());
             Session::get()->getOverlayManager().setOverlayTextUpdated(Overlay::OverlayDebug);
+
+            // Log metrics to stdout/file
+            SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
+                        "[METRICS] %s",
+                        Session::get()->getOverlayManager().getOverlayText(Overlay::OverlayDebug));
         }
 
         // Accumulate these values into the global stats

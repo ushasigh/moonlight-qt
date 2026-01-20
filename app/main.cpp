@@ -55,7 +55,7 @@
 #define LOG_TO_FILE
 #elif !defined(QT_DEBUG) && defined(Q_OS_DARWIN)
 // Log to file for release Mac builds
-#define LOG_TO_FILE
+// #define LOG_TO_FILE  // Disabled to log to stdout/stderr
 #else
 // Log to console for debug Mac builds
 #endif

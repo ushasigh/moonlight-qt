@@ -1,0 +1,1772 @@
+[
+  {
+    "timestamp": "2026-01-19T00:00:11",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 73.22,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 73.22,
+      "decoding_fps": 73.22,
+      "rendering_fps": 65.9
+    },
+    "host_processing_latency": {
+      "min_ms": 12.8,
+      "max_ms": 27.2,
+      "average_ms": 15.3
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 10.0,
+      "rtt_ms": 8,
+      "rtt_variance_ms": 8
+    },
+    "timing": {
+      "average_decode_time_ms": 39.19,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.22
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:12",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 66.32,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 66.32,
+      "decoding_fps": 66.32,
+      "rendering_fps": 62.58
+    },
+    "host_processing_latency": {
+      "min_ms": 12.8,
+      "max_ms": 27.2,
+      "average_ms": 15.4
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 5.63,
+      "rtt_ms": 3,
+      "rtt_variance_ms": 0
+    },
+    "timing": {
+      "average_decode_time_ms": 24.09,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.13
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:12",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.48,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 59.48,
+      "decoding_fps": 59.48,
+      "rendering_fps": 59.48
+    },
+    "host_processing_latency": {
+      "min_ms": 13.1,
+      "max_ms": 18.8,
+      "average_ms": 15.1
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 4,
+      "rtt_variance_ms": 0
+    },
+    "timing": {
+      "average_decode_time_ms": 3.63,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:13",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.15,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.15,
+      "decoding_fps": 60.15,
+      "rendering_fps": 60.15
+    },
+    "host_processing_latency": {
+      "min_ms": 13.1,
+      "max_ms": 17.9,
+      "average_ms": 14.8
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 5,
+      "rtt_variance_ms": 4
+    },
+    "timing": {
+      "average_decode_time_ms": 4.43,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:13",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.1,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.1,
+      "decoding_fps": 60.1,
+      "rendering_fps": 60.1
+    },
+    "host_processing_latency": {
+      "min_ms": 14.4,
+      "max_ms": 17.0,
+      "average_ms": 14.9
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 17,
+      "rtt_variance_ms": 22
+    },
+    "timing": {
+      "average_decode_time_ms": 4.28,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:14",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.15,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.15,
+      "decoding_fps": 60.15,
+      "rendering_fps": 60.15
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 17.0,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 17,
+      "rtt_variance_ms": 23
+    },
+    "timing": {
+      "average_decode_time_ms": 2.99,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:14",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.21,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.21,
+      "decoding_fps": 60.21,
+      "rendering_fps": 60.21
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.2,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 17,
+      "rtt_variance_ms": 22
+    },
+    "timing": {
+      "average_decode_time_ms": 3.56,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:15",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.07,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.07,
+      "decoding_fps": 60.07,
+      "rendering_fps": 60.07
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.6,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 17,
+      "rtt_variance_ms": 22
+    },
+    "timing": {
+      "average_decode_time_ms": 3.45,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:15",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.94,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 59.94,
+      "decoding_fps": 59.94,
+      "rendering_fps": 59.94
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.1,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 19,
+      "rtt_variance_ms": 20
+    },
+    "timing": {
+      "average_decode_time_ms": 3.46,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:16",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.24,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.24,
+      "decoding_fps": 60.24,
+      "rendering_fps": 60.24
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.0,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 11,
+      "rtt_variance_ms": 15
+    },
+    "timing": {
+      "average_decode_time_ms": 3.42,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:17",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.36,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.36,
+      "decoding_fps": 60.36,
+      "rendering_fps": 60.36
+    },
+    "host_processing_latency": {
+      "min_ms": 14.4,
+      "max_ms": 15.6,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 10,
+      "rtt_variance_ms": 12
+    },
+    "timing": {
+      "average_decode_time_ms": 2.9,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:17",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.09,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.09,
+      "decoding_fps": 60.09,
+      "rendering_fps": 60.09
+    },
+    "host_processing_latency": {
+      "min_ms": 14.4,
+      "max_ms": 16.0,
+      "average_ms": 15.1
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 10,
+      "rtt_variance_ms": 12
+    },
+    "timing": {
+      "average_decode_time_ms": 3.39,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:18",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.05,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.05,
+      "decoding_fps": 60.05,
+      "rendering_fps": 60.05
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.0,
+      "average_ms": 15.0
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 12,
+      "rtt_variance_ms": 10
+    },
+    "timing": {
+      "average_decode_time_ms": 3.26,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:18",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.23,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.23,
+      "decoding_fps": 60.23,
+      "rendering_fps": 60.23
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.8,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 8,
+      "rtt_variance_ms": 7
+    },
+    "timing": {
+      "average_decode_time_ms": 3.46,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:19",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.38,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.38,
+      "decoding_fps": 60.38,
+      "rendering_fps": 60.38
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.3,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 7,
+      "rtt_variance_ms": 7
+    },
+    "timing": {
+      "average_decode_time_ms": 3.77,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:19",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 58.99,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 58.99,
+      "decoding_fps": 58.99,
+      "rendering_fps": 58.99
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.4,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 10,
+      "rtt_variance_ms": 10
+    },
+    "timing": {
+      "average_decode_time_ms": 3.57,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:20",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.2,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.2,
+      "decoding_fps": 60.2,
+      "rendering_fps": 60.2
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.5,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 6,
+      "rtt_variance_ms": 7
+    },
+    "timing": {
+      "average_decode_time_ms": 4.42,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:20",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.29,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.29,
+      "decoding_fps": 60.29,
+      "rendering_fps": 60.29
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.5,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 5,
+      "rtt_variance_ms": 6
+    },
+    "timing": {
+      "average_decode_time_ms": 4.73,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:21",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.24,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.24,
+      "decoding_fps": 60.24,
+      "rendering_fps": 60.24
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.4,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 5,
+      "rtt_variance_ms": 3
+    },
+    "timing": {
+      "average_decode_time_ms": 5.15,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:21",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.16,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.16,
+      "decoding_fps": 60.16,
+      "rendering_fps": 60.16
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.4,
+      "average_ms": 14.8
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 4,
+      "rtt_variance_ms": 2
+    },
+    "timing": {
+      "average_decode_time_ms": 4.32,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:22",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.04,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.04,
+      "decoding_fps": 60.04,
+      "rendering_fps": 60.04
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.7,
+      "average_ms": 15.2
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 30,
+      "rtt_variance_ms": 24
+    },
+    "timing": {
+      "average_decode_time_ms": 4.91,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:22",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.32,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.32,
+      "decoding_fps": 60.32,
+      "rendering_fps": 60.32
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.7,
+      "average_ms": 15.2
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 17,
+      "rtt_variance_ms": 22
+    },
+    "timing": {
+      "average_decode_time_ms": 6.17,
+      "average_queue_delay_ms": 0.03,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:23",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.34,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.34,
+      "decoding_fps": 60.34,
+      "rendering_fps": 60.34
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.7,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 16,
+      "rtt_variance_ms": 21
+    },
+    "timing": {
+      "average_decode_time_ms": 4.24,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:23",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.07,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.07,
+      "decoding_fps": 60.07,
+      "rendering_fps": 60.07
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 15,
+      "rtt_variance_ms": 19
+    },
+    "timing": {
+      "average_decode_time_ms": 2.72,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:24",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.19,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 59.19,
+      "decoding_fps": 59.19,
+      "rendering_fps": 59.19
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.6,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 12,
+      "rtt_variance_ms": 15
+    },
+    "timing": {
+      "average_decode_time_ms": 4.26,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:24",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.27,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.27,
+      "decoding_fps": 60.27,
+      "rendering_fps": 60.27
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.6,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 11,
+      "rtt_variance_ms": 15
+    },
+    "timing": {
+      "average_decode_time_ms": 4.45,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:25",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.66,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 59.66,
+      "decoding_fps": 59.66,
+      "rendering_fps": 59.66
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.7,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 19,
+      "rtt_variance_ms": 18
+    },
+    "timing": {
+      "average_decode_time_ms": 3.07,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:25",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.18,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.18,
+      "decoding_fps": 60.18,
+      "rendering_fps": 60.18
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.7,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 11,
+      "rtt_variance_ms": 14
+    },
+    "timing": {
+      "average_decode_time_ms": 3.79,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:26",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.7,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.7,
+      "decoding_fps": 60.7,
+      "rendering_fps": 60.7
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.6,
+      "average_ms": 15.0
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 9,
+      "rtt_variance_ms": 11
+    },
+    "timing": {
+      "average_decode_time_ms": 3.78,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:26",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.75,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 59.75,
+      "decoding_fps": 59.75,
+      "rendering_fps": 59.75
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.6,
+      "average_ms": 15.0
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 10,
+      "rtt_variance_ms": 7
+    },
+    "timing": {
+      "average_decode_time_ms": 4.06,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:27",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.3,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.3,
+      "decoding_fps": 60.3,
+      "rendering_fps": 60.3
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 15.6,
+      "average_ms": 14.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 6,
+      "rtt_variance_ms": 5
+    },
+    "timing": {
+      "average_decode_time_ms": 4.02,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:28",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.43,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.43,
+      "decoding_fps": 60.43,
+      "rendering_fps": 60.43
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 3,
+      "rtt_variance_ms": 4
+    },
+    "timing": {
+      "average_decode_time_ms": 3.99,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:28",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.13,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.13,
+      "decoding_fps": 60.13,
+      "rendering_fps": 60.13
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 4,
+      "rtt_variance_ms": 3
+    },
+    "timing": {
+      "average_decode_time_ms": 5.75,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:29",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.5,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.5,
+      "decoding_fps": 60.5,
+      "rendering_fps": 60.5
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.8,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 3,
+      "rtt_variance_ms": 3
+    },
+    "timing": {
+      "average_decode_time_ms": 4.38,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:29",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.12,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.12,
+      "decoding_fps": 60.12,
+      "rendering_fps": 60.12
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.8,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 3,
+      "rtt_variance_ms": 1
+    },
+    "timing": {
+      "average_decode_time_ms": 2.48,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:30",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.08,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.08,
+      "decoding_fps": 60.08,
+      "rendering_fps": 60.08
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 30,
+      "rtt_variance_ms": 23
+    },
+    "timing": {
+      "average_decode_time_ms": 3.08,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:30",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.23,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.23,
+      "decoding_fps": 60.23,
+      "rendering_fps": 60.23
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 17,
+      "rtt_variance_ms": 22
+    },
+    "timing": {
+      "average_decode_time_ms": 4.36,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:31",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.38,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 59.38,
+      "decoding_fps": 59.38,
+      "rendering_fps": 59.38
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.8,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 18,
+      "rtt_variance_ms": 22
+    },
+    "timing": {
+      "average_decode_time_ms": 4.06,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:31",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.14,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.14,
+      "decoding_fps": 60.14,
+      "rendering_fps": 60.14
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.8,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 18,
+      "rtt_variance_ms": 23
+    },
+    "timing": {
+      "average_decode_time_ms": 3.13,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:32",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.1,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.1,
+      "decoding_fps": 60.1,
+      "rendering_fps": 60.1
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 16,
+      "rtt_variance_ms": 21
+    },
+    "timing": {
+      "average_decode_time_ms": 4.39,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:32",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.05,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.05,
+      "decoding_fps": 60.05,
+      "rendering_fps": 60.05
+    },
+    "host_processing_latency": {
+      "min_ms": 14.4,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 20,
+      "rtt_variance_ms": 22
+    },
+    "timing": {
+      "average_decode_time_ms": 5.99,
+      "average_queue_delay_ms": 0.03,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:33",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.21,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.21,
+      "decoding_fps": 60.21,
+      "rendering_fps": 60.21
+    },
+    "host_processing_latency": {
+      "min_ms": 14.4,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 17,
+      "rtt_variance_ms": 19
+    },
+    "timing": {
+      "average_decode_time_ms": 6.02,
+      "average_queue_delay_ms": 0.03,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:33",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 59.34,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 59.34,
+      "decoding_fps": 59.34,
+      "rendering_fps": 59.34
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 27.0,
+      "average_ms": 15.0
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 10,
+      "rtt_variance_ms": 13
+    },
+    "timing": {
+      "average_decode_time_ms": 4.26,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:34",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.21,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.21,
+      "decoding_fps": 60.21,
+      "rendering_fps": 60.21
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 47.7,
+      "average_ms": 15.9
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 9,
+      "rtt_variance_ms": 10
+    },
+    "timing": {
+      "average_decode_time_ms": 4.56,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:34",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 61.26,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 61.26,
+      "decoding_fps": 61.26,
+      "rendering_fps": 61.26
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 47.7,
+      "average_ms": 15.4
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 9,
+      "rtt_variance_ms": 8
+    },
+    "timing": {
+      "average_decode_time_ms": 5.58,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:35",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.14,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.14,
+      "decoding_fps": 60.14,
+      "rendering_fps": 60.14
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 14.7,
+      "average_ms": 14.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 7,
+      "rtt_variance_ms": 8
+    },
+    "timing": {
+      "average_decode_time_ms": 4.57,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:35",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.1,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.1,
+      "decoding_fps": 60.1,
+      "rendering_fps": 60.1
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 27.1,
+      "average_ms": 15.2
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 7,
+      "rtt_variance_ms": 7
+    },
+    "timing": {
+      "average_decode_time_ms": 4.88,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:36",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.23,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.23,
+      "decoding_fps": 60.23,
+      "rendering_fps": 60.23
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 47.8,
+      "average_ms": 17.3
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 6,
+      "rtt_variance_ms": 4
+    },
+    "timing": {
+      "average_decode_time_ms": 7.34,
+      "average_queue_delay_ms": 0.03,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:36",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.18,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.18,
+      "decoding_fps": 60.18,
+      "rendering_fps": 60.18
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 47.8,
+      "average_ms": 16.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 5,
+      "rtt_variance_ms": 2
+    },
+    "timing": {
+      "average_decode_time_ms": 7.57,
+      "average_queue_delay_ms": 0.03,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:37",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.24,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.24,
+      "decoding_fps": 60.24,
+      "rendering_fps": 60.24
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 27.1,
+      "average_ms": 15.2
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 4,
+      "rtt_variance_ms": 4
+    },
+    "timing": {
+      "average_decode_time_ms": 5.59,
+      "average_queue_delay_ms": 0.03,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:37",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.23,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.23,
+      "decoding_fps": 60.23,
+      "rendering_fps": 60.23
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 35.7,
+      "average_ms": 16.0
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 4,
+      "rtt_variance_ms": 0
+    },
+    "timing": {
+      "average_decode_time_ms": 5.47,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:38",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 61.21,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 61.21,
+      "decoding_fps": 61.21,
+      "rendering_fps": 61.21
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 35.7,
+      "average_ms": 15.6
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 4,
+      "rtt_variance_ms": 0
+    },
+    "timing": {
+      "average_decode_time_ms": 5.93,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:39",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.26,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.26,
+      "decoding_fps": 60.26,
+      "rendering_fps": 60.26
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 25.7,
+      "average_ms": 14.9
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 4,
+      "rtt_variance_ms": 0
+    },
+    "timing": {
+      "average_decode_time_ms": 5.91,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:39",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.27,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.27,
+      "decoding_fps": 60.27,
+      "rendering_fps": 60.27
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 16.9,
+      "average_ms": 15.3
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 4,
+      "rtt_variance_ms": 0
+    },
+    "timing": {
+      "average_decode_time_ms": 5.17,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:40",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.15,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.15,
+      "decoding_fps": 60.15,
+      "rendering_fps": 60.15
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 17.0,
+      "average_ms": 15.7
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 18,
+      "rtt_variance_ms": 21
+    },
+    "timing": {
+      "average_decode_time_ms": 4.3,
+      "average_queue_delay_ms": 0.01,
+      "average_render_time_ms": 0.01
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:40",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.13,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.13,
+      "decoding_fps": 60.13,
+      "rendering_fps": 60.13
+    },
+    "host_processing_latency": {
+      "min_ms": 14.4,
+      "max_ms": 47.8,
+      "average_ms": 16.3
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 16,
+      "rtt_variance_ms": 19
+    },
+    "timing": {
+      "average_decode_time_ms": 5.68,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:41",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 61.21,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 61.21,
+      "decoding_fps": 61.21,
+      "rendering_fps": 61.21
+    },
+    "host_processing_latency": {
+      "min_ms": 14.4,
+      "max_ms": 47.8,
+      "average_ms": 16.4
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 14,
+      "rtt_variance_ms": 18
+    },
+    "timing": {
+      "average_decode_time_ms": 6.49,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:41",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 61.11,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 61.11,
+      "decoding_fps": 61.11,
+      "rendering_fps": 61.11
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 47.8,
+      "average_ms": 17.4
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 18,
+      "rtt_variance_ms": 18
+    },
+    "timing": {
+      "average_decode_time_ms": 5.61,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  },
+  {
+    "timestamp": "2026-01-19T00:00:42",
+    "video_stream": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.25,
+      "codec": "H.264"
+    },
+    "frame_rates": {
+      "incoming_network_fps": 60.25,
+      "decoding_fps": 60.25,
+      "rendering_fps": 60.25
+    },
+    "host_processing_latency": {
+      "min_ms": 14.5,
+      "max_ms": 47.8,
+      "average_ms": 18.3
+    },
+    "network": {
+      "frames_dropped_percent": 0.0,
+      "jitter_dropped_percent": 0.0,
+      "rtt_ms": 10,
+      "rtt_variance_ms": 12
+    },
+    "timing": {
+      "average_decode_time_ms": 5.35,
+      "average_queue_delay_ms": 0.02,
+      "average_render_time_ms": 0.02
+    }
+  }
+]
