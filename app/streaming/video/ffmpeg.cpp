@@ -1,6 +1,7 @@
 #include <Limelight.h>
 #include "ffmpeg.h"
 #include "streaming/session.h"
+#include "settings/streamingpreferences.h"
 
 #include <QDir>
 #include <QDateTime>
@@ -1795,20 +1796,40 @@ void FFmpegVideoDecoder::decoderThreadProc()
 
                     // Record frame to file if recording is enabled
                     if (m_VideoRecorder) {
-                        // Start recording on first frame if not already started
-                        if (!m_VideoRecorder->isRecording() && m_VideoDecoderCtx) {
-                            // Save to recorded_session directory in the moonlight-qt folder
-                            QString recordDir = "/home/wcsng5g/moonlight-qt/recorded_session";
-                            QDir().mkpath(recordDir);
-                            QString outputPath = QString("%1/moonlight_recording_%2.yuv")
-                                .arg(recordDir)
-                                .arg(QDateTime::currentDateTime().toString("yyyyMMdd_hhmmss"));
-                            m_VideoRecorder->initialize(outputPath,
-                                                       m_VideoDecoderCtx->width,
-                                                       m_VideoDecoderCtx->height,
-                                                       m_StreamFps > 0 ? m_StreamFps : 60);
+                        auto prefs = StreamingPreferences::get();
+
+                        if (prefs->recordingEnabled) {
+                            // Start recording on first frame if not already started
+                            static bool recordingFailed = false;
+                            if (!m_VideoRecorder->isRecording() && m_VideoDecoderCtx && !recordingFailed) {
+                                QString recordDir = prefs->recordingOutputDir;
+                                if (recordDir.isEmpty()) {
+                                    recordDir = QStringLiteral("/home/wcsng5g/moonlight-qt/recorded_session");
+                                }
+                                QDir().mkpath(recordDir);
+
+                                auto recordFormat = VideoRecorder::recordFormatFromString(prefs->recordingFormat);
+                                QString ext = recordFormat == VideoRecorder::RecordFormat::Mp4 ? QStringLiteral("mp4")
+                                                                                                 : QStringLiteral("yuv");
+                                QString outputPath = QString("%1/moonlight_recording_%2.%3")
+                                    .arg(recordDir)
+                                    .arg(QDateTime::currentDateTime().toString("yyyyMMdd_hhmmss"))
+                                    .arg(ext);
+
+                                bool started = m_VideoRecorder->initialize(outputPath,
+                                                                          m_VideoDecoderCtx->width,
+                                                                          m_VideoDecoderCtx->height,
+                                                                          m_StreamFps > 0 ? m_StreamFps : 60,
+                                                                          recordFormat);
+                                if (!started) {
+                                    recordingFailed = true;
+                                }
+                            }
+
+                            if (m_VideoRecorder->isRecording()) {
+                                m_VideoRecorder->writeFrame(frame, frameNumber, rtpTimestamp);
+                            }
                         }
-                        m_VideoRecorder->writeFrame(frame, frameNumber, rtpTimestamp);
                     }
 
                     // Queue the frame for rendering (or render now if pacer is disabled)

@@ -4,10 +4,19 @@
 #include <QDateTime>
 #include <QDir>
 #include <QTextStream>
+#include <cstdio>
+
+#ifdef Q_OS_WIN
+#define popen _popen
+#define pclose _pclose
+#endif
 
 VideoRecorder::VideoRecorder()
     : m_Recording(false),
+      m_OutputPath(),
+      m_Format(RecordFormat::Raw),
       m_OutputFile(nullptr),
+      m_FfmpegPipe(nullptr),
       m_SwsCtx(nullptr),
       m_ConvertedFrame(nullptr),
       m_FrameBuffer(nullptr),
@@ -26,7 +35,15 @@ VideoRecorder::~VideoRecorder()
     finalize();
 }
 
-bool VideoRecorder::initialize(const QString& outputPath, int width, int height, int fps)
+VideoRecorder::RecordFormat VideoRecorder::recordFormatFromString(const QString& value)
+{
+    if (value.compare("mp4", Qt::CaseInsensitive) == 0) {
+        return RecordFormat::Mp4;
+    }
+    return RecordFormat::Raw;
+}
+
+bool VideoRecorder::initialize(const QString& outputPath, int width, int height, int fps, RecordFormat format)
 {
     QMutexLocker locker(&m_Mutex);
 
@@ -37,21 +54,44 @@ bool VideoRecorder::initialize(const QString& outputPath, int width, int height,
     }
 
     m_OutputPath = outputPath;
+    m_Format = format;
     m_Width = width;
     m_Height = height;
     m_Fps = fps;
     m_FrameCount = 0;
 
-    // Open the output file for raw YUV data
-    m_OutputFile = new QFile(outputPath);
-    if (!m_OutputFile->open(QIODevice::WriteOnly)) {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-                     "VideoRecorder: Could not open output file: %s",
-                     outputPath.toUtf8().constData());
-        delete m_OutputFile;
-        m_OutputFile = nullptr;
-        return false;
+    // Open the output sink based on format
+    if (m_Format == RecordFormat::Raw) {
+        m_OutputFile = new QFile(outputPath);
+        if (!m_OutputFile->open(QIODevice::WriteOnly)) {
+            SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+                         "VideoRecorder: Could not open output file: %s",
+                         outputPath.toUtf8().constData());
+            delete m_OutputFile;
+            m_OutputFile = nullptr;
+            return false;
+        }
     }
+    else {
+        QString cmd = QStringLiteral(
+            "ffmpeg -y -hide_banner -loglevel warning "
+            "-f rawvideo -pix_fmt yuv420p -s %1x%2 -r %3 -i pipe:0 "
+            "-c:v libx264 -preset ultrafast -crf 18 -pix_fmt yuv420p \"%4\"")
+                .arg(width)
+                .arg(height)
+                .arg(fps)
+                .arg(outputPath);
+        m_FfmpegPipe = popen(cmd.toUtf8().constData(), "w");
+        if (!m_FfmpegPipe) {
+            SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+                         "VideoRecorder: Could not start ffmpeg pipe: %s",
+                         cmd.toUtf8().constData());
+            return false;
+        }
+    }
+
+    // Mark as recording so finalize() can clean up on failures below
+    m_Recording = true;
 
     // Allocate frame for format conversion to YUV420P
     m_ConvertedFrame = av_frame_alloc();
@@ -79,14 +119,12 @@ bool VideoRecorder::initialize(const QString& outputPath, int width, int height,
     av_image_fill_arrays(m_ConvertedFrame->data, m_ConvertedFrame->linesize,
                          m_FrameBuffer, AV_PIX_FMT_YUV420P, width, height, 1);
 
-    m_Recording = true;
-
     // フレームcsvファイルの作成
      QString csvPath = outputPath + ".frames.csv";
     m_CsvFile = new QFile(csvPath);
     if (m_CsvFile->open(QIODevice::WriteOnly | QIODevice::Text)) {
         m_CsvStream = new QTextStream(m_CsvFile);
-        *m_CsvStream << "local_frame_idx,frame_nr,rtp_timestamp,is_Duplicate\n";
+        *m_CsvStream << "local_frame_idx,frame_nr,rtp_timestamp\n";
     } else {
         SDL_LogWarn(SDL_LOG_CATEGORY_APPLICATION,
                     "VideoRecorder: Could not open CSV: %s",
@@ -95,7 +133,7 @@ bool VideoRecorder::initialize(const QString& outputPath, int width, int height,
         m_CsvFile = nullptr;
     }
 
-    // Write metadata file alongside the YUV file
+    // Write metadata file alongside the output
     QString metaPath = outputPath + ".meta";
     QFile metaFile(metaPath);
     if (metaFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
@@ -104,15 +142,18 @@ bool VideoRecorder::initialize(const QString& outputPath, int width, int height,
         out << "height=" << height << "\n";
         out << "fps=" << fps << "\n";
         out << "format=yuv420p\n";
-        out << "# To convert to MP4, run:\n";
-        out << "# ffmpeg -f rawvideo -pix_fmt yuv420p -s " << width << "x" << height 
-            << " -r " << fps << " -i \"" << outputPath << "\" -c:v libx264 -pix_fmt yuv420p output.mp4\n";
+        if (m_Format == RecordFormat::Raw) {
+            out << "# To convert to MP4, run:\n";
+            out << "# ffmpeg -f rawvideo -pix_fmt yuv420p -s " << width << "x" << height 
+                << " -r " << fps << " -i \"" << outputPath << "\" -c:v libx264 -pix_fmt yuv420p output.mp4\n";
+        }
         metaFile.close();
     }
 
     SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION,
-                "VideoRecorder: Started recording YUV to %s (%dx%d @ %d fps)",
-                outputPath.toUtf8().constData(), width, height, fps);
+                "VideoRecorder: Started recording to %s (%dx%d @ %d fps, format=%s)",
+                outputPath.toUtf8().constData(), width, height, fps,
+                m_Format == RecordFormat::Raw ? "raw" : "mp4");
 
     return true;
 }
@@ -121,7 +162,9 @@ bool VideoRecorder::writeFrame(AVFrame* frame, int frameNumber, uint32_t rtpTime
 {
     QMutexLocker locker(&m_Mutex);
 
-    if (!m_Recording || !frame || !m_OutputFile) {
+    if (!m_Recording || !frame ||
+        (m_Format == RecordFormat::Raw && !m_OutputFile) ||
+        (m_Format == RecordFormat::Mp4 && !m_FfmpegPipe)) {
         return false;
     }
 
@@ -186,19 +229,31 @@ bool VideoRecorder::writeFrame(AVFrame* frame, int frameNumber, uint32_t rtpTime
         av_frame_free(&tempFrame);
     }
 
-    // Write Y plane
-    for (int y = 0; y < m_Height; y++) {
-        m_OutputFile->write((const char*)(m_ConvertedFrame->data[0] + y * m_ConvertedFrame->linesize[0]), m_Width);
-    }
+    // Write out the converted frame
+    auto writePlane = [&](int plane, int height, int width, int stride) -> bool {
+        const uint8_t* base = m_ConvertedFrame->data[plane];
+        for (int y = 0; y < height; y++) {
+            const uint8_t* row = base + y * stride;
+            if (m_Format == RecordFormat::Raw) {
+                if (m_OutputFile->write((const char*)row, width) != width) {
+                    return false;
+                }
+            }
+            else {
+                if (fwrite(row, 1, width, m_FfmpegPipe) != (size_t)width) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    };
 
-    // Write U plane
-    for (int y = 0; y < m_Height / 2; y++) {
-        m_OutputFile->write((const char*)(m_ConvertedFrame->data[1] + y * m_ConvertedFrame->linesize[1]), m_Width / 2);
-    }
-
-    // Write V plane
-    for (int y = 0; y < m_Height / 2; y++) {
-        m_OutputFile->write((const char*)(m_ConvertedFrame->data[2] + y * m_ConvertedFrame->linesize[2]), m_Width / 2);
+    if (!writePlane(0, m_Height, m_Width, m_ConvertedFrame->linesize[0]) ||
+        !writePlane(1, m_Height / 2, m_Width / 2, m_ConvertedFrame->linesize[1]) ||
+        !writePlane(2, m_Height / 2, m_Width / 2, m_ConvertedFrame->linesize[2])) {
+        SDL_LogWarn(SDL_LOG_CATEGORY_APPLICATION,
+                    "VideoRecorder: Failed to write frame data");
+        return false;
     }
 
     // Record frame info to CSV after successfully writing YUV data
@@ -235,11 +290,15 @@ void VideoRecorder::finalize()
         m_CsvFile = nullptr;
     }
 
-    // Close output file
+    // Close output sinks
     if (m_OutputFile) {
         m_OutputFile->close();
         delete m_OutputFile;
         m_OutputFile = nullptr;
+    }
+    if (m_FfmpegPipe) {
+        pclose(m_FfmpegPipe);
+        m_FfmpegPipe = nullptr;
     }
 
     // Clean up
