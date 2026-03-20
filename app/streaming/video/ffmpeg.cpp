@@ -1773,6 +1773,9 @@ void FFmpegVideoDecoder::decoderThreadProc()
                     // Capture a frame timestamp to measuring pacing delay
                     frame->pkt_dts = LiGetMicroseconds();
 
+                    int frameNumber = -1;
+                    uint32_t rtpTimestamp = 0;
+
                     if (!m_FrameInfoQueue.isEmpty()) {
                         // Data buffers in the DU are not valid here!
                         DECODE_UNIT du = m_FrameInfoQueue.dequeue();
@@ -1784,6 +1787,8 @@ void FFmpegVideoDecoder::decoderThreadProc()
 
                         // Store the presentation time (90 kHz timebase)
                         frame->pts = (int64_t)du.rtpTimestamp;
+                        frameNumber = du.frameNumber;
+                        rtpTimestamp = du.rtpTimestamp;
                     }
 
                     m_ActiveWndVideoStats.decodedFrames++;
@@ -1793,7 +1798,7 @@ void FFmpegVideoDecoder::decoderThreadProc()
                         // Start recording on first frame if not already started
                         if (!m_VideoRecorder->isRecording() && m_VideoDecoderCtx) {
                             // Save to recorded_session directory in the moonlight-qt folder
-                            QString recordDir = "/Users/ushasighosh/Desktop/moonlight-qt/recorded_session";
+                            QString recordDir = "/home/wcsng5g/moonlight-qt/recorded_session";
                             QDir().mkpath(recordDir);
                             QString outputPath = QString("%1/moonlight_recording_%2.yuv")
                                 .arg(recordDir)
@@ -1803,7 +1808,7 @@ void FFmpegVideoDecoder::decoderThreadProc()
                                                        m_VideoDecoderCtx->height,
                                                        m_StreamFps > 0 ? m_StreamFps : 60);
                         }
-                        m_VideoRecorder->writeFrame(frame);
+                        m_VideoRecorder->writeFrame(frame, frameNumber, rtpTimestamp);
                     }
 
                     // Queue the frame for rendering (or render now if pacer is disabled)

@@ -15,7 +15,9 @@ VideoRecorder::VideoRecorder()
       m_Height(0),
       m_Fps(0),
       m_FrameCount(0),
-      m_LastInputFormat(AV_PIX_FMT_NONE)
+      m_LastInputFormat(AV_PIX_FMT_NONE),
+      m_CsvFile(nullptr),
+      m_CsvStream(nullptr)
 {
 }
 
@@ -79,6 +81,20 @@ bool VideoRecorder::initialize(const QString& outputPath, int width, int height,
 
     m_Recording = true;
 
+    // フレームcsvファイルの作成
+     QString csvPath = outputPath + ".frames.csv";
+    m_CsvFile = new QFile(csvPath);
+    if (m_CsvFile->open(QIODevice::WriteOnly | QIODevice::Text)) {
+        m_CsvStream = new QTextStream(m_CsvFile);
+        *m_CsvStream << "local_frame_idx,frame_nr,rtp_timestamp,is_Duplicate\n";
+    } else {
+        SDL_LogWarn(SDL_LOG_CATEGORY_APPLICATION,
+                    "VideoRecorder: Could not open CSV: %s",
+                    csvPath.toUtf8().constData());
+        delete m_CsvFile;
+        m_CsvFile = nullptr;
+    }
+
     // Write metadata file alongside the YUV file
     QString metaPath = outputPath + ".meta";
     QFile metaFile(metaPath);
@@ -101,7 +117,7 @@ bool VideoRecorder::initialize(const QString& outputPath, int width, int height,
     return true;
 }
 
-bool VideoRecorder::writeFrame(AVFrame* frame)
+bool VideoRecorder::writeFrame(AVFrame* frame, int frameNumber, uint32_t rtpTimestamp)
 {
     QMutexLocker locker(&m_Mutex);
 
@@ -185,6 +201,13 @@ bool VideoRecorder::writeFrame(AVFrame* frame)
         m_OutputFile->write((const char*)(m_ConvertedFrame->data[2] + y * m_ConvertedFrame->linesize[2]), m_Width / 2);
     }
 
+    // Record frame info to CSV after successfully writing YUV data
+    if (m_CsvStream) {
+        *m_CsvStream << m_FrameCount << ","
+                     << frameNumber << ","
+                     << rtpTimestamp << "\n";
+    }
+
     m_FrameCount++;
 
     return true;
@@ -199,6 +222,18 @@ void VideoRecorder::finalize()
     }
 
     m_Recording = false;
+
+    // Close CSV resources
+    if (m_CsvStream) {
+        m_CsvStream->flush();
+        delete m_CsvStream;
+        m_CsvStream = nullptr;
+    }
+    if (m_CsvFile) {
+        m_CsvFile->close();
+        delete m_CsvFile;
+        m_CsvFile = nullptr;
+    }
 
     // Close output file
     if (m_OutputFile) {
