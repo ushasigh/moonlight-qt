@@ -3,6 +3,7 @@
 #include <QObject>
 #include <QRect>
 #include <QQmlEngine>
+#include <QString>
 
 class StreamingPreferences : public QObject
 {
@@ -177,6 +178,9 @@ public:
     bool swapFaceButtons;
     bool keepAwake;
     int packetSize;
+    bool recordingEnabled;
+    QString recordingFormat;
+    QString recordingOutputDir;
     AudioConfig audioConfig;
     VideoCodecConfig videoCodecConfig;
     bool enableHdr;

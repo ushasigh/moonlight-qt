@@ -51,11 +51,15 @@
 #define SER_CAPTURESYSKEYS "capturesyskeys"
 #define SER_KEEPAWAKE "keepawake"
 #define SER_LANGUAGE "language"
+#define SER_RECORD_ENABLE "recording/enable"
+#define SER_RECORD_FORMAT "recording/format"
+#define SER_RECORD_OUTPUT_DIR "recording/output_dir"
 
 #define CURRENT_DEFAULT_VER 2
 
 static StreamingPreferences* s_GlobalPrefs;
 static QReadWriteLock s_GlobalPrefsLock;
+static const QString k_DefaultRecordDir = QStringLiteral("/home/wcsng5g/moonlight-qt/recorded_session");
 
 StreamingPreferences::StreamingPreferences(QQmlEngine *qmlEngine)
     : m_QmlEngine(qmlEngine)
@@ -165,6 +169,9 @@ void StreamingPreferences::reload()
                                                                                                                  : UIDisplayMode::UI_MAXIMIZED)).toInt());
     language = static_cast<Language>(settings.value(SER_LANGUAGE,
                                                     static_cast<int>(Language::LANG_AUTO)).toInt());
+    recordingEnabled = settings.value(SER_RECORD_ENABLE, true).toBool();
+    recordingFormat = settings.value(SER_RECORD_FORMAT, QStringLiteral("raw")).toString();
+    recordingOutputDir = settings.value(SER_RECORD_OUTPUT_DIR, k_DefaultRecordDir).toString();
 
 
     // Perform default settings updates as required based on last default version
@@ -355,6 +362,9 @@ void StreamingPreferences::save()
     settings.setValue(SER_SWAPFACEBUTTONS, swapFaceButtons);
     settings.setValue(SER_CAPTURESYSKEYS, captureSysKeysMode);
     settings.setValue(SER_KEEPAWAKE, keepAwake);
+    settings.setValue(SER_RECORD_ENABLE, recordingEnabled);
+    settings.setValue(SER_RECORD_FORMAT, recordingFormat);
+    settings.setValue(SER_RECORD_OUTPUT_DIR, recordingOutputDir);
 }
 
 int StreamingPreferences::getDefaultBitrate(int width, int height, int fps, bool yuv444)
