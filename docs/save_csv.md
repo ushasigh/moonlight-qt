@@ -117,7 +117,7 @@ qmake ..
 make -j$(nproc)
 ```
 
-##Run
+## Run
 
 Run Moonlight normally → click the gear icon (Settings) → enable “Show performance stats while streaming”.
 Then execute the following command to run Moonlight and save the metrics log in moonlight-qt/build/app:
