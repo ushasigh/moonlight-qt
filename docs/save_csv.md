@@ -117,6 +117,19 @@ qmake ..
 make -j$(nproc)
 ```
 
+##Run
+
+Run Moonlight normally → click the gear icon (Settings) → enable “Show performance stats while streaming”.
+Then execute the following command to run Moonlight and save the metrics log in moonlight-qt/build/app:
+
+```bash
+cd moonlight-qt/build/app
+./moonlight >moonlight.log 2>&1
+```
+
+
+
+
 Run Moonlight-Qt and start a stream; YUV + CSV are emitted to `recorded_session/`.
 
 ## Limitations
